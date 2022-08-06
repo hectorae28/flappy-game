@@ -20,7 +20,7 @@ public class pipeSpawnerScript : MonoBehaviour
         if(timer>maxtimer){
             GameObject newpipe= Instantiate(pipes);
             newpipe.transform.position = transform.position + new Vector3(0, Random.Range(-height,height),0);
-            Destroy(newpipe,15);
+            Destroy(newpipe,5);
             timer=0;
         }
         timer += Time.deltaTime;
